@@ -1,0 +1,4 @@
+# 不忽略 Prisma 相关文件
+!node_modules/.prisma/**
+!node_modules/@prisma/client/libquery*
+

@@ -1,0 +1,9 @@
+{
+  "buildCommand": "npm run build",
+  "functions": {
+    "app/api/**": {
+      "includeFiles": "node_modules/.prisma/**"
+    }
+  }
+}
+
