@@ -7,12 +7,11 @@ const nextConfig: NextConfig = {
   // 配置 Turbopack 以避免警告
   turbopack: {},
   
-  // 确保 Prisma Client 及其二进制文件在 Vercel 上被正确打包
-  // 这对于部署到 Vercel 等服务器less环境非常重要
-  serverExternalPackages: ["@prisma/client", "prisma"],
+  // 使用 standalone 输出模式以确保所有必要的文件被包含
+  output: "standalone",
   
-  // 可选：添加输出模式以提高性能
-  output: undefined, // 保持默认，让 Vercel 使用其优化的打包方式
+  // 确保 Prisma Client 在 Vercel 上能够正确工作
+  // Vercel 会自动处理 Prisma 的二进制文件
 };
 
 export default nextConfig;
