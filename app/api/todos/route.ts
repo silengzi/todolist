@@ -3,6 +3,7 @@ import { prisma } from '@/lib/db'
 import { getCurrentUser, createAuthResponse } from '@/lib/auth-middleware'
 import { z } from 'zod'
 import { Prisma } from '@prisma/client'
+import { Priority } from '@/types/todo'
 
 const todoSchema = z.object({
   title: z.string().min(1, '标题不能为空').max(200, '标题不能超过200个字符'),
@@ -42,8 +43,8 @@ export async function GET(request: NextRequest) {
       where.categoryId = categoryId
     }
 
-    if (priority) {
-      where.priority = priority
+    if (priority && ['LOW', 'MEDIUM', 'HIGH', 'URGENT'].includes(priority)) {
+      where.priority = priority as Priority
     }
 
     if (search) {

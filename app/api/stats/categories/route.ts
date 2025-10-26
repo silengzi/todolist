@@ -62,7 +62,7 @@ export async function GET(request: NextRequest) {
       },
     })
 
-    const uncategorizedCompleted = uncategorizedTodos.filter(todo => todo.completed).length
+    const uncategorizedCompleted = uncategorizedTodos.filter((todo: { completed: boolean }) => todo.completed).length
     const uncategorizedTotal = uncategorizedTodos.length
     const uncategorizedCompletionRate = uncategorizedTotal > 0 
       ? (uncategorizedCompleted / uncategorizedTotal) * 100 
