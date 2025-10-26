@@ -183,7 +183,7 @@ export default function CategoriesPage() {
                 <div className="text-gray-500">暂无分类</div>
               </div>
             ) : (
-              categories.map(category => (
+              categories.map((category: Category) => (
                 <CategoryItem
                   key={category.id}
                   category={category}

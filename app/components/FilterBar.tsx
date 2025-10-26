@@ -78,7 +78,7 @@ export function FilterBar({ categories, filters, onFiltersChange }: FilterBarPro
         >
           <option value="">全部分类</option>
           <option value="uncategorized">未分类</option>
-          {categories.map(category => (
+          {categories.map((category: Category) => (
             <option key={category.id} value={category.id}>
               {category.name}
             </option>

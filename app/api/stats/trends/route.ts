@@ -64,8 +64,8 @@ export async function GET(request: NextRequest) {
       },
     })
 
-    const categoryStats = categoryTrends.map(category => {
-      const completed = category.todos.filter(todo => todo.completed).length
+    const categoryStats = categoryTrends.map((category: any) => {
+      const completed = category.todos.filter((todo: any) => todo.completed).length
       const total = category.todos.length
       return {
         categoryId: category.id,
