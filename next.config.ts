@@ -10,8 +10,22 @@ const nextConfig: NextConfig = {
   // 使用 standalone 输出模式以确保所有必要的文件被包含
   output: "standalone",
   
-  // 确保 Prisma Client 在 Vercel 上能够正确工作
-  // Vercel 会自动处理 Prisma 的二进制文件
+  // 确保 Prisma Client 及其二进制文件在 Vercel 上被正确打包
+  // 这些文件包含查询引擎，在 serverless 环境中非常重要
+  experimental: {
+    serverComponentsExternalPackages: ["@prisma/client"],
+  },
+  
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      // 在构建时包含 Prisma 的查询引擎
+      config.externals = config.externals || [];
+      config.externals.push({
+        "child_process": "commonjs child_process",
+      });
+    }
+    return config;
+  },
 };
 
 export default nextConfig;
