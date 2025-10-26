@@ -72,7 +72,7 @@ export async function GET(request: NextRequest) {
     })
 
     const categoryStats = categoryTrends.map((category: CategoryWithTodos) => {
-      const completed = category.todos.filter((todo) => todo.completed).length
+      const completed = category.todos.filter((todo: { completed: boolean }) => todo.completed).length
       const total = category.todos.length
       return {
         categoryId: category.id,
@@ -86,7 +86,7 @@ export async function GET(request: NextRequest) {
 
     return NextResponse.json({
       dailyStats,
-      priorityTrends: priorityTrends.reduce((acc, trend) => {
+      priorityTrends: priorityTrends.reduce((acc: Record<string, number>, trend: { priority: string; completed: boolean; _count: { priority: number } }) => {
         const key = `${trend.priority}_${trend.completed ? 'completed' : 'pending'}`
         acc[key] = trend._count.priority
         return acc

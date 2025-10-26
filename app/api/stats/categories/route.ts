@@ -36,7 +36,7 @@ export async function GET(request: NextRequest) {
     })
 
     const categoryStats = categories.map((category: CategoryWithTodos) => {
-      const completedCount = category.todos.filter((todo) => todo.completed).length
+      const completedCount = category.todos.filter((todo: { completed: boolean }) => todo.completed).length
       const totalCount = category.todos.length
       const completionRate = totalCount > 0 ? (completedCount / totalCount) * 100 : 0
 
