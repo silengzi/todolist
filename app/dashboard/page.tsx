@@ -3,7 +3,7 @@
 import { useAuth } from '@/lib/auth-context'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
-import { Todo, Category, TodoFilters, TodoStats, CategoryStats } from '@/types/todo'
+import { Todo, Category, TodoFilters, TodoStats, CategoryStats, Priority } from '@/types/todo'
 import { TodoItem } from '../components/TodoItem'
 import { TodoForm } from '../components/TodoForm'
 import { FilterBar } from '../components/FilterBar'
@@ -71,7 +71,13 @@ export default function DashboardPage() {
     }
   }
 
-  const handleAddTodo = async (todoData: any) => {
+  const handleAddTodo = async (todoData: {
+    title: string
+    description?: string
+    priority: Priority
+    categoryId?: string
+    dueDate?: string
+  }) => {
     try {
       const response = await fetch('/api/todos', {
         method: 'POST',

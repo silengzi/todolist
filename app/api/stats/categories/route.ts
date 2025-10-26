@@ -2,6 +2,14 @@ import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { getCurrentUser, createAuthResponse } from '@/lib/auth-middleware'
 
+type CategoryWithTodos = {
+  id: string
+  name: string
+  color: string
+  todos: { completed: boolean }[]
+  _count: { todos: number }
+}
+
 // 按分类统计
 export async function GET(request: NextRequest) {
   try {
@@ -27,8 +35,8 @@ export async function GET(request: NextRequest) {
       orderBy: { createdAt: 'desc' },
     })
 
-    const categoryStats = categories.map((category: any) => {
-      const completedCount = category.todos.filter((todo: any) => todo.completed).length
+    const categoryStats = categories.map((category: CategoryWithTodos) => {
+      const completedCount = category.todos.filter((todo) => todo.completed).length
       const totalCount = category.todos.length
       const completionRate = totalCount > 0 ? (completedCount / totalCount) * 100 : 0
 

@@ -2,6 +2,13 @@ import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { getCurrentUser, createAuthResponse } from '@/lib/auth-middleware'
 
+type CategoryWithTodos = {
+  id: string
+  name: string
+  color: string
+  todos: { completed: boolean; createdAt: Date }[]
+}
+
 // 趋势分析
 export async function GET(request: NextRequest) {
   try {
@@ -64,8 +71,8 @@ export async function GET(request: NextRequest) {
       },
     })
 
-    const categoryStats = categoryTrends.map((category: any) => {
-      const completed = category.todos.filter((todo: any) => todo.completed).length
+    const categoryStats = categoryTrends.map((category: CategoryWithTodos) => {
+      const completed = category.todos.filter((todo) => todo.completed).length
       const total = category.todos.length
       return {
         categoryId: category.id,

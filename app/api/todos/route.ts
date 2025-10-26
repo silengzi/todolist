@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { getCurrentUser, createAuthResponse } from '@/lib/auth-middleware'
 import { z } from 'zod'
+import { Prisma } from '@prisma/client'
 
 const todoSchema = z.object({
   title: z.string().min(1, '标题不能为空').max(200, '标题不能超过200个字符'),
@@ -29,7 +30,7 @@ export async function GET(request: NextRequest) {
 
     const skip = (page - 1) * limit
 
-    const where: any = {
+    const where: Prisma.TodoWhereInput = {
       userId: user.id,
     }
 

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { getCurrentUser, createAuthResponse } from '@/lib/auth-middleware'
+import { Prisma } from '@prisma/client'
 
 // 获取统计概览
 export async function GET(request: NextRequest) {
@@ -13,7 +14,7 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url)
     const period = searchParams.get('period') || 'all' // all, today, week, month
 
-    let dateFilter: any = {}
+    let dateFilter: Prisma.TodoWhereInput = {}
     const now = new Date()
 
     switch (period) {

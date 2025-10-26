@@ -9,7 +9,7 @@ interface FilterBarProps {
 }
 
 export function FilterBar({ categories, filters, onFiltersChange }: FilterBarProps) {
-  const handleFilterChange = (key: keyof TodoFilters, value: any) => {
+  const handleFilterChange = (key: keyof TodoFilters, value: boolean | string | Priority | number | undefined) => {
     onFiltersChange({
       ...filters,
       [key]: value,
