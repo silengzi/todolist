@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { getCurrentUser, createAuthResponse } from '@/lib/auth-middleware'
 import { z } from 'zod'
-import { Prisma } from '@prisma/client'
 import { Priority } from '@/types/todo'
 
 const todoSchema = z.object({
@@ -31,7 +30,7 @@ export async function GET(request: NextRequest) {
 
     const skip = (page - 1) * limit
 
-    const where: Prisma.TodoWhereInput = {
+    const where: Record<string, any> = {
       userId: user.id,
     }
 
