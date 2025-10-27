@@ -33,4 +33,20 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
+### ⚠️ 部署前必读
+
+由于 `.env*` 文件在 `.gitignore` 中，部署前需要在 Vercel 上配置环境变量。
+
+**必须配置的环境变量：**
+- `DATABASE_URL`: PostgreSQL 数据库连接字符串
+
+详细的部署指南请查看：[doc/deployment-guide.md](doc/deployment-guide.md)
+
+### 快速部署步骤
+
+1. Push 代码到 GitHub
+2. 在 Vercel Dashboard 添加环境变量 `DATABASE_URL`
+3. 连接 Vercel Postgres（可选但推荐）
+4. 部署完成
+
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
