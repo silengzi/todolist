@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import { existsSync, readFileSync } from 'fs';
+import { PrismaPlugin } from '@prisma/nextjs-monorepo-workaround-plugin';
 
 // 检查并打印 DATABASE_URL 环境变量
 function checkDatabaseUrl() {
@@ -56,6 +57,14 @@ const nextConfig: NextConfig = {
   // 确保 Prisma Client 及其二进制文件在 Vercel 上被正确打包
   // 这些文件包含查询引擎，在 serverless 环境中非常重要
   serverExternalPackages: ["@prisma/client"],
+
+  /** Fix prisma client issue when deploying to Vercel */
+  webpack: (config, { isServer }) => {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
+    if (isServer) config.plugins = [...config.plugins, new PrismaPlugin()]
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+    return config
+  },
 };
 
 export default nextConfig;
