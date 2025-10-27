@@ -48,15 +48,16 @@ const nextConfig: NextConfig = {
   // Next.js 16 会自动加载 .env.local 和 .env 文件
   // 不需要手动在 env 中配置，除非需要暴露给客户端
   
-  // 明确使用 Turbopack
-  turbopack: {},
+  // 注意：本项目必须使用 webpack（通过 --webpack 标志）
+  // PrismaPlugin 是 webpack 插件，不兼容 Turbopack
+  // 因此 package.json 中的 dev 脚本添加了 --webpack 标志
   
-  // 使用 standalone 输出模式以确保所有必要的文件被包含
-  output: "standalone",
+  // // 使用 standalone 输出模式以确保所有必要的文件被包含
+  // output: "standalone",
   
-  // 确保 Prisma Client 及其二进制文件在 Vercel 上被正确打包
-  // 这些文件包含查询引擎，在 serverless 环境中非常重要
-  serverExternalPackages: ["@prisma/client"],
+  // // 确保 Prisma Client 及其二进制文件在 Vercel 上被正确打包
+  // // 这些文件包含查询引擎，在 serverless 环境中非常重要
+  // serverExternalPackages: ["@prisma/client"],
 
   /** Fix prisma client issue when deploying to Vercel */
   webpack: (config, { isServer }) => {
