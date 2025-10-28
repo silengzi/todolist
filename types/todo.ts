@@ -7,6 +7,7 @@ export interface Todo {
   completed: boolean
   priority: Priority
   dueDate?: string
+  completedAt?: string
   createdAt: string
   updatedAt: string
   userId: string

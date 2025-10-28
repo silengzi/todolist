@@ -32,6 +32,7 @@ export async function PATCH(
       where: { id },
       data: {
         completed: !todo.completed,
+        completedAt: !todo.completed ? new Date() : null,
       },
       include: {
         category: true,
