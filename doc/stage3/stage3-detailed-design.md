@@ -147,7 +147,7 @@ export interface PolishResponse {
   improvements: string[];
   readabilityScore: number;
 }
-
+*--
 export class ContentPolisher {
   async polishContent(request: PolishRequest): Promise<PolishResponse> {
     // 1. 内容分析
