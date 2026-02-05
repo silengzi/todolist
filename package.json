@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "postinstall": "prisma generate",
-    "export-db": "tsx scripts/export-data.ts"
+    "export-db": "tsx scripts/export-data.ts",
+    "import-db": "tsx scripts/import-data.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.18.0",
