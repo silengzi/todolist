@@ -1,0 +1,820 @@
+{
+  "metadata": {
+    "exportedAt": "2026-02-05T10:30:04.850Z",
+    "databaseUrl": "postgresql://***:***@ep-floral-meadow-a1q6nptg-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require",
+    "recordCounts": {
+      "users": 1,
+      "sessions": 12,
+      "todos": 36,
+      "categories": 3,
+      "reports": 3
+    }
+  },
+  "data": {
+    "users": [
+      {
+        "id": "cmh7kzjll0000h880xo3n1dyy",
+        "email": "474960201@qq.com",
+        "password": "[HIDDEN]",
+        "name": "Silengzi",
+        "createdAt": "2025-10-26T10:43:43.737Z",
+        "updatedAt": "2025-10-26T10:43:43.737Z",
+        "categories": 3,
+        "reports": 3,
+        "sessions": 12,
+        "todos": 36
+      }
+    ],
+    "sessions": [
+      {
+        "id": "cmh7mvi8k0001h8pwpkjml1aq",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "token": "285468c5e60083deb3324eb2045f1d2bd9f30fdb398feab52d282c19d7f4d651",
+        "expiresAt": "2025-11-02T11:36:34.578Z",
+        "createdAt": "2025-10-26T11:36:34.580Z"
+      },
+      {
+        "id": "cmh7o278p0001h884tb520pnz",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "token": "508af0982536bb77eee9cd094a5fb565755de833a2e5e8cc31d5d8df5be0e1f9",
+        "expiresAt": "2025-11-02T12:09:46.535Z",
+        "createdAt": "2025-10-26T12:09:46.537Z"
+      },
+      {
+        "id": "cmh8ikhdr0001rqi0aak3khq4",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "token": "ba158085ae1835c3267fc0f573eb42618bd6ac478412e4babc207283af2cf350",
+        "expiresAt": "2025-11-03T02:23:47.966Z",
+        "createdAt": "2025-10-27T02:23:47.968Z"
+      },
+      {
+        "id": "cmh8ky5wz0001rqxwovpti1jr",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "token": "5b219a67503f7d739836bb803d48df94e28211480d7fc34a46b24d2a23615518",
+        "expiresAt": "2025-11-03T03:30:25.522Z",
+        "createdAt": "2025-10-27T03:30:25.523Z"
+      },
+      {
+        "id": "cmh8l8s1m0001l204cad1obt0",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "token": "5a65bcea3abefe5b1a7d0e73de8f4ebd4ee61d76f51184d878afcef8229d356c",
+        "expiresAt": "2025-11-03T03:38:40.758Z",
+        "createdAt": "2025-10-27T03:38:40.762Z"
+      },
+      {
+        "id": "cmh8yzikm0001rqpsfnmsej9c",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "token": "1d63e135d9ab8499497e4c1b31ee293d5373a057c7a7e4e6f69278c82fc05764",
+        "expiresAt": "2025-11-03T10:03:23.204Z",
+        "createdAt": "2025-10-27T10:03:23.206Z"
+      },
+      {
+        "id": "cmha5xrvy0001jo044revftc0",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "token": "a989306bdfc257550b6fecdefb433c370a61deb02d7fdc0c683ce2e7cbebd6e3",
+        "expiresAt": "2025-11-04T06:05:45.453Z",
+        "createdAt": "2025-10-28T06:05:45.455Z"
+      },
+      {
+        "id": "cmhlb6d2y0001if04wn813va7",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "token": "86fe6e4f3a74a6e6206103be5fd26e4eb32bde99f9c1ca77728204ce21372e1d",
+        "expiresAt": "2025-11-12T01:17:52.182Z",
+        "createdAt": "2025-11-05T01:17:52.187Z"
+      },
+      {
+        "id": "cmhvlq0s00001jl047pnctyu2",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "token": "8e4672f50da8c0e922ce788008987a31e5c717b15cae9ffef911160c1bb51b21",
+        "expiresAt": "2025-11-19T06:10:47.276Z",
+        "createdAt": "2025-11-12T06:10:47.280Z"
+      },
+      {
+        "id": "cmi0dnvj40001ju04vxpfzfix",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "token": "45e9e43d50c18693665d083b237f10534eeedaae557be55b9a8880bf6e3e5713",
+        "expiresAt": "2025-11-22T14:24:01.117Z",
+        "createdAt": "2025-11-15T14:24:01.121Z"
+      },
+      {
+        "id": "cml998z1k0001rqw44tlfl2bx",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "token": "aade05bd4398271531c28dee90a1b22b0d0bdea1914c0a6bcef3d35181e905c9",
+        "expiresAt": "2026-02-12T09:29:29.958Z",
+        "createdAt": "2026-02-05T09:29:29.960Z"
+      },
+      {
+        "id": "cml9bbxqi0001rqigkl8jgwec",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "token": "a4c54c52b1a52356e08908b153855a22af6c90108e8abeef52e5035d833a9785",
+        "expiresAt": "2026-02-12T10:27:47.464Z",
+        "createdAt": "2026-02-05T10:27:47.467Z"
+      }
+    ],
+    "todos": [
+      {
+        "id": "cmh8lnugy0001ju0460of5j6b",
+        "title": "TodoList功能优化",
+        "description": "添加自动记录和手动编辑的功能",
+        "completed": true,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-10-27T03:50:23.746Z",
+        "updatedAt": "2025-10-27T09:40:51.445Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": "2025-10-27T09:40:51.444Z",
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmh8lopcm0003l2046j4xhgti",
+        "title": "TodoList样式与交互优化",
+        "description": "现代化样式与交互设计",
+        "completed": false,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-10-27T03:51:03.767Z",
+        "updatedAt": "2025-10-27T10:03:35.790Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmh9zo6m00001rql4bqr1qdpj",
+        "title": "模糊综合评价算法接口文档撰写",
+        "description": "模糊综合评价算法接口文档撰写",
+        "completed": true,
+        "priority": "MEDIUM",
+        "dueDate": null,
+        "createdAt": "2025-10-28T03:10:20.281Z",
+        "updatedAt": "2025-10-28T03:10:30.282Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3e5m0008h880q04zxezm",
+        "completedAt": "2025-10-28T03:10:30.281Z",
+        "category": {
+          "id": "cmh7l3e5m0008h880q04zxezm",
+          "name": "工作"
+        }
+      },
+      {
+        "id": "cmha6gq0s0001l404m6l093em",
+        "title": "Todolist-日报功能优化",
+        "description": "个人todo要求能自动整理日报，周报，月报，年报，最好能以某种形式自动发给我，样式要符合现代化设计",
+        "completed": false,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-10-28T06:20:29.501Z",
+        "updatedAt": "2025-10-28T06:20:29.501Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmha6io4p0001ld04nz403pzr",
+        "title": "Todolist-阶段3",
+        "description": "接入真实ai，用户体验优化。",
+        "completed": false,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-10-28T06:22:00.362Z",
+        "updatedAt": "2025-10-28T06:22:00.362Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmha6jpca0003l404m9suvlq2",
+        "title": "设计个人起始页面",
+        "description": "设计个人起始页面，把个人便签等都放上去。要有极客风格。",
+        "completed": true,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-10-28T06:22:48.587Z",
+        "updatedAt": "2025-10-29T08:39:35.778Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": "2025-10-29T08:39:35.777Z",
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmha6kq880001jm04tyyoexq4",
+        "title": "运营平台调研",
+        "description": "研究下要运营哪些平台，开始打造极客（专家）身份",
+        "completed": false,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-10-28T06:23:36.393Z",
+        "updatedAt": "2025-10-28T06:23:36.393Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmha6lt8w0005l404766dt6hv",
+        "title": "ai工作流整理",
+        "description": "整理一份最完整的ai工作流",
+        "completed": true,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-10-28T06:24:26.960Z",
+        "updatedAt": "2025-11-13T09:16:44.666Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": "2025-11-13T09:16:44.664Z",
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmha6mloz0001jx04b39i8pco",
+        "title": "个人提醒页面",
+        "description": "工作过的东西，要及时整理归纳（弄一个提醒单，时常打开看看提醒自己要注意哪些事，可以加到todo里也可以单独做一个页面，最好是国内部署）",
+        "completed": true,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-10-28T06:25:03.827Z",
+        "updatedAt": "2025-11-11T02:28:05.530Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": "2025-11-11T02:28:05.529Z",
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmha6o0y60003jm04aa8kb0xy",
+        "title": "本地运行asfim并预估学习时间",
+        "description": "超凡，给你分享了afsim源代码和全套学习资料，你先在自己机器上部署起来，能运行，然后学习一下，评估下学习难度，一个是基于这个源代码做前端管理界面，另外就是增加新模型。",
+        "completed": true,
+        "priority": "HIGH",
+        "dueDate": null,
+        "createdAt": "2025-10-28T06:26:10.254Z",
+        "updatedAt": "2025-10-29T10:04:50.194Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3e5m0008h880q04zxezm",
+        "completedAt": "2025-10-29T10:04:50.192Z",
+        "category": {
+          "id": "cmh7l3e5m0008h880q04zxezm",
+          "name": "工作"
+        }
+      },
+      {
+        "id": "cmha78iyw0001la0437tt5qst",
+        "title": "域名备案处理",
+        "description": "包括腾讯云、官方备案",
+        "completed": true,
+        "priority": "MEDIUM",
+        "dueDate": null,
+        "createdAt": "2025-10-28T06:42:06.728Z",
+        "updatedAt": "2025-10-30T02:04:10.255Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": "2025-10-30T02:04:10.253Z",
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmha79r1k0001ju04krd90f01",
+        "title": "Todolist-数据库替换",
+        "description": "Neon太卡了，换一个好用的，同时迁移数据。",
+        "completed": false,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-10-28T06:43:03.849Z",
+        "updatedAt": "2025-10-28T06:43:03.849Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmhag7hov0001k1043g4d5cng",
+        "title": "电动车挡风被",
+        "description": null,
+        "completed": true,
+        "priority": "HIGH",
+        "dueDate": null,
+        "createdAt": "2025-10-28T10:53:14.959Z",
+        "updatedAt": "2025-11-17T03:05:17.989Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l2u0q0006h880i4m3fg20",
+        "completedAt": "2025-11-17T03:05:17.988Z",
+        "category": {
+          "id": "cmh7l2u0q0006h880i4m3fg20",
+          "name": "生活"
+        }
+      },
+      {
+        "id": "cmhbqy4so0001ju04vwxxf86t",
+        "title": "cursor无限续杯文章更新",
+        "description": "更新内容：机器码重置及找不到安装目录的问题",
+        "completed": true,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-10-29T08:41:40.297Z",
+        "updatedAt": "2025-10-30T03:39:45.127Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": "2025-10-30T03:39:45.126Z",
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmhbr4v0p0001l704m8pmby0f",
+        "title": "整理存款",
+        "description": null,
+        "completed": true,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-10-29T08:46:54.217Z",
+        "updatedAt": "2025-10-30T01:58:32.402Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l2u0q0006h880i4m3fg20",
+        "completedAt": "2025-10-30T01:58:32.401Z",
+        "category": {
+          "id": "cmh7l2u0q0006h880i4m3fg20",
+          "name": "生活"
+        }
+      },
+      {
+        "id": "cmhbrcivm0003ky04xph13lev",
+        "title": "Silengzi-Home 起始页项目优化",
+        "description": "1. 新闻资讯模块优化，支持多数据源新闻、按行业获取新闻等\n2. 新增技术文章模块，参考掘金酱的左、中部分\n3. 考虑是否集成 todo 模块\n4. 融入更多极客元素，比如搜索框更多玩法\n5. 设置面板优化\n6. 整体样式优化\n7. 快捷方式导出\n8. 思考分类目录图标如何优化",
+        "completed": true,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-10-29T08:52:51.731Z",
+        "updatedAt": "2025-10-30T09:00:39.025Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": "2025-10-30T09:00:39.024Z",
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmhbty3zv0001la042bemd9p4",
+        "title": "继续研究 AFSIM",
+        "description": "一个半月内，完成前端接入的demo、模型扩展demo",
+        "completed": false,
+        "priority": "HIGH",
+        "dueDate": null,
+        "createdAt": "2025-10-29T10:05:38.108Z",
+        "updatedAt": "2025-10-29T10:05:38.108Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3e5m0008h880q04zxezm",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l3e5m0008h880q04zxezm",
+          "name": "工作"
+        }
+      },
+      {
+        "id": "cmheelmhj0001js0414x3ruao",
+        "title": "好好收拾家",
+        "description": "1. 整理家务，处理杂乱问题，尤其是客厅，沙发、桌面等都要整洁，没用的东西扔掉。\n2. 弄几盆绿萝，放电视机柜和水台上。\n3. 找一个家具设计软件，自己设计一下家里的东西该如何摆放更合理。",
+        "completed": false,
+        "priority": "MEDIUM",
+        "dueDate": null,
+        "createdAt": "2025-10-31T05:19:19.831Z",
+        "updatedAt": "2025-10-31T05:19:19.831Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l2u0q0006h880i4m3fg20",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l2u0q0006h880i4m3fg20",
+          "name": "生活"
+        }
+      },
+      {
+        "id": "cmheg5z9x0001kv04x1mblpze",
+        "title": "Silengzi-Home 起始页项目优化",
+        "description": "1. 新闻资讯、技术文章模块全部删除，回头把资讯类的单独做一个聚合网站\n2. 添加分类，功能及样式优化\n3. 快捷方式导出",
+        "completed": true,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-10-31T06:03:09.142Z",
+        "updatedAt": "2025-11-12T06:35:25.902Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": "2025-11-12T06:35:25.900Z",
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmhek41um0001l1041ctgejme",
+        "title": "AFSIM学习笔记系列文章",
+        "description": null,
+        "completed": false,
+        "priority": "HIGH",
+        "dueDate": null,
+        "createdAt": "2025-10-31T07:53:37.630Z",
+        "updatedAt": "2025-10-31T07:53:37.630Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3e5m0008h880q04zxezm",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l3e5m0008h880q04zxezm",
+          "name": "工作"
+        }
+      },
+      {
+        "id": "cmhn1gnot0001jp04vkwlvwze",
+        "title": "Todolist优化",
+        "description": "要区分是日常任务，还是长期目标",
+        "completed": false,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-11-06T06:21:28.685Z",
+        "updatedAt": "2025-11-06T06:21:28.685Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmhn1h9js0001js04np696yos",
+        "title": "搭建AFSIM社区",
+        "description": null,
+        "completed": false,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-11-06T06:21:57.016Z",
+        "updatedAt": "2025-11-06T06:21:57.016Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmhshflz90001i804eq4ig19e",
+        "title": "搭建gitlab",
+        "description": null,
+        "completed": false,
+        "priority": "HIGH",
+        "dueDate": null,
+        "createdAt": "2025-11-10T01:47:24.549Z",
+        "updatedAt": "2025-11-10T01:47:24.549Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3e5m0008h880q04zxezm",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l3e5m0008h880q04zxezm",
+          "name": "工作"
+        }
+      },
+      {
+        "id": "cmhshg3310001l204tykgj7ho",
+        "title": "下载高清影像资源",
+        "description": null,
+        "completed": false,
+        "priority": "HIGH",
+        "dueDate": null,
+        "createdAt": "2025-11-10T01:47:46.718Z",
+        "updatedAt": "2025-11-10T01:47:46.718Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3e5m0008h880q04zxezm",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l3e5m0008h880q04zxezm",
+          "name": "工作"
+        }
+      },
+      {
+        "id": "cmhshs5yo0001kv04z27kyk5q",
+        "title": "中电目标识别效果实现",
+        "description": "1. 先实现开火\n2. 然后优化一下雷达的组装，要清楚雷达的原理\n3. 看下如何自定义空域\n4. 学习下如何通讯和分配任务",
+        "completed": true,
+        "priority": "HIGH",
+        "dueDate": null,
+        "createdAt": "2025-11-10T01:57:10.320Z",
+        "updatedAt": "2025-11-10T10:08:59.631Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3e5m0008h880q04zxezm",
+        "completedAt": "2025-11-10T10:08:59.629Z",
+        "category": {
+          "id": "cmh7l3e5m0008h880q04zxezm",
+          "name": "工作"
+        }
+      },
+      {
+        "id": "cmhsmd8jh0001gp048trmcz9f",
+        "title": "地图下载文章保存",
+        "description": "将csdn上那篇【使用qgis下载天地图影像资源】的教学文章copy到博客",
+        "completed": true,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-11-10T04:05:31.901Z",
+        "updatedAt": "2025-11-12T06:33:52.937Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": "2025-11-12T06:33:52.935Z",
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmhtyd9m00001jm047jpoj692",
+        "title": "Silengzi-Home 起始页项目优化",
+        "description": "优化快捷方式置顶、常用等的使用体验，这是非常常用的功能。",
+        "completed": true,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-11-11T02:29:14.857Z",
+        "updatedAt": "2025-11-11T03:14:52.649Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": "2025-11-11T03:14:52.647Z",
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmhvmja5h0001l104v1gdxb62",
+        "title": "公众号搭建",
+        "description": "认真搭建公众号，作为自媒体的主阵地，其他平台都需要引流到公众号（如何引流，文案与集成方式）",
+        "completed": false,
+        "priority": "MEDIUM",
+        "dueDate": null,
+        "createdAt": "2025-11-12T06:33:32.453Z",
+        "updatedAt": "2025-11-12T06:33:32.453Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmhvmmyce0001ld04bdcii1wh",
+        "title": "洗内裤",
+        "description": "把家里的内裤都洗了！",
+        "completed": true,
+        "priority": "HIGH",
+        "dueDate": null,
+        "createdAt": "2025-11-12T06:36:23.774Z",
+        "updatedAt": "2026-02-05T09:29:43.330Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l2u0q0006h880i4m3fg20",
+        "completedAt": "2026-02-05T09:29:43.328Z",
+        "category": {
+          "id": "cmh7l2u0q0006h880i4m3fg20",
+          "name": "生活"
+        }
+      },
+      {
+        "id": "cmhvmnoyq0001jy04dt1q3jcu",
+        "title": "看看本周末去哪玩",
+        "description": null,
+        "completed": true,
+        "priority": "HIGH",
+        "dueDate": null,
+        "createdAt": "2025-11-12T06:36:58.274Z",
+        "updatedAt": "2025-11-13T05:26:23.469Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l2u0q0006h880i4m3fg20",
+        "completedAt": "2025-11-13T05:26:23.468Z",
+        "category": {
+          "id": "cmh7l2u0q0006h880i4m3fg20",
+          "name": "生活"
+        }
+      },
+      {
+        "id": "cmhvn4son0001l204mco56gg8",
+        "title": "研究cursor无限续杯升级方案",
+        "description": "cursor无限续杯+pro破解+二次封装+淘宝/闲鱼售卖",
+        "completed": false,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-11-12T06:50:16.247Z",
+        "updatedAt": "2025-11-12T06:50:16.247Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmhws0prr0001l5048m4seycf",
+        "title": "Silengzi-home 项目优化",
+        "description": "1. 分类图标每次都要手动设置的问题，而且设置了分类图标之后，过段时间就会丢失下级数据\n2. 置顶的快捷方式，每次请后重新导入都要手动设置，最好也能加到配置里，或者长期保存\n3. 添加新的快捷方式时，体验很不好，尤其是图标没法定义",
+        "completed": false,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-11-13T01:54:50.104Z",
+        "updatedAt": "2025-11-13T01:54:50.104Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmhwzkiy20001jy0432bnfs46",
+        "title": "信息聚合网站",
+        "description": "1. 自己搭建一个信息聚合网站/app，folo免费帐户只允许订阅30个链接\n2. 订阅所有主流平台的信息到个人账号\n3. 开个小号，私密订阅",
+        "completed": false,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-11-13T05:26:11.691Z",
+        "updatedAt": "2025-11-13T05:26:11.691Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l3wb6000ah880slwfrkck",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l3wb6000ah880slwfrkck",
+          "name": "个人"
+        }
+      },
+      {
+        "id": "cmi0dopde0001l504w1ssg7u5",
+        "title": "学习摄影",
+        "description": null,
+        "completed": false,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-11-15T14:24:39.794Z",
+        "updatedAt": "2025-11-15T14:24:39.794Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l2u0q0006h880i4m3fg20",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l2u0q0006h880i4m3fg20",
+          "name": "生活"
+        }
+      },
+      {
+        "id": "cmi0dp37e0001jy04azb3bciq",
+        "title": "学习吉他",
+        "description": null,
+        "completed": false,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-11-15T14:24:57.722Z",
+        "updatedAt": "2025-11-15T14:24:57.722Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l2u0q0006h880i4m3fg20",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l2u0q0006h880i4m3fg20",
+          "name": "生活"
+        }
+      },
+      {
+        "id": "cmi0dpd800003l504xyik7o46",
+        "title": "锻炼",
+        "description": null,
+        "completed": false,
+        "priority": "LOW",
+        "dueDate": null,
+        "createdAt": "2025-11-15T14:25:10.705Z",
+        "updatedAt": "2025-11-15T14:25:10.705Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "categoryId": "cmh7l2u0q0006h880i4m3fg20",
+        "completedAt": null,
+        "category": {
+          "id": "cmh7l2u0q0006h880i4m3fg20",
+          "name": "生活"
+        }
+      }
+    ],
+    "categories": [
+      {
+        "id": "cmh7l2u0q0006h880i4m3fg20",
+        "name": "生活",
+        "color": "#84CC16",
+        "description": "日常生活待办",
+        "createdAt": "2025-10-26T10:46:17.210Z",
+        "updatedAt": "2025-10-26T10:46:17.210Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "user": {
+          "id": "cmh7kzjll0000h880xo3n1dyy",
+          "email": "474960201@qq.com"
+        },
+        "todos": 8
+      },
+      {
+        "id": "cmh7l3e5m0008h880q04zxezm",
+        "name": "工作",
+        "color": "#3B82F6",
+        "description": "公司工作待办",
+        "createdAt": "2025-10-26T10:46:43.306Z",
+        "updatedAt": "2025-10-26T10:46:43.306Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "user": {
+          "id": "cmh7kzjll0000h880xo3n1dyy",
+          "email": "474960201@qq.com"
+        },
+        "todos": 7
+      },
+      {
+        "id": "cmh7l3wb6000ah880slwfrkck",
+        "name": "个人",
+        "color": "#EC4899",
+        "description": "个人事业待办",
+        "createdAt": "2025-10-26T10:47:06.834Z",
+        "updatedAt": "2025-10-26T10:47:06.834Z",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "user": {
+          "id": "cmh7kzjll0000h880xo3n1dyy",
+          "email": "474960201@qq.com"
+        },
+        "todos": 21
+      }
+    ],
+    "reports": [
+      {
+        "id": "cmh8z0bex0003rqps5wv4x6n6",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "type": "DAILY",
+        "startDate": "2025-10-27T00:00:00.000Z",
+        "endDate": "2025-10-27T00:00:00.000Z",
+        "summary": "日报共完成 1 项任务主要集中在「个人」分类。主要成果包括：TodoList功能优化等。",
+        "content": "# 日报\n\n**时间范围**：2025/10/27 至 2025/10/27\n**生成时间**：2025/10/27 18:04:00\n\n## 今日完成\n\n### 个人\n\n- ✅ **TodoList功能优化** - 添加自动记录和手动编辑的功能 | 低 | 2025/10/27\n\n## 待完成任务\n\n- ⏳ **TodoList样式与交互优化** - 现代化样式与交互设计 | 低 | 截止：无截止日期\n\n## 统计概览\n\n- 已完成任务：1 项\n- 待完成任务：1 项\n- 完成率：50%\n",
+        "createdAt": "2025-10-27T10:04:00.586Z",
+        "updatedAt": "2025-10-27T10:04:10.692Z",
+        "user": {
+          "id": "cmh7kzjll0000h880xo3n1dyy",
+          "email": "474960201@qq.com"
+        }
+      },
+      {
+        "id": "cmh9zoyum0003rql4yniz93zo",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "type": "DAILY",
+        "startDate": "2025-10-28T00:00:00.000Z",
+        "endDate": "2025-10-28T00:00:00.000Z",
+        "summary": "日报共完成 1 项任务主要集中在「工作」分类。主要成果包括：模糊综合评价算法接口文档撰写等。",
+        "content": "# 日报\n\n**时间范围**：2025/10/28 至 2025/10/28\n**生成时间**：2025/10/28 11:10:56\n\n## 今日完成\n\n### 工作\n\n- ✅ **模糊综合评价算法接口文档撰写** - 模糊综合评价算法接口文档撰写 | 中 | 2025/10/28\n\n## 待完成任务\n\n- ⏳ **TodoList样式与交互优化** - 现代化样式与交互设计 | 低 | 截止：无截止日期\n\n## 统计概览\n\n- 已完成任务：1 项\n- 待完成任务：1 项\n- 完成率：50%\n",
+        "createdAt": "2025-10-28T03:10:56.878Z",
+        "updatedAt": "2025-10-28T03:10:56.878Z",
+        "user": {
+          "id": "cmh7kzjll0000h880xo3n1dyy",
+          "email": "474960201@qq.com"
+        }
+      },
+      {
+        "id": "cmh9zq89r0005rql4cf8dpf4l",
+        "userId": "cmh7kzjll0000h880xo3n1dyy",
+        "type": "WEEKLY",
+        "startDate": "2025-10-26T00:00:00.000Z",
+        "endDate": "2025-11-01T00:00:00.000Z",
+        "summary": "周报共完成 2 项任务主要集中在「工作」分类。主要成果包括：模糊综合评价算法接口文档撰写、TodoList功能优化等。",
+        "content": "# 周报\n\n**时间范围**：2025/10/26 至 2025/11/1\n**生成时间**：2025/10/28 11:11:55\n\n## 已完成任务\n\n### 工作\n\n- ✅ **模糊综合评价算法接口文档撰写** - 模糊综合评价算法接口文档撰写 | 中 | 2025/10/28\n### 个人\n\n- ✅ **TodoList功能优化** - 添加自动记录和手动编辑的功能 | 低 | 2025/10/27\n\n## 待完成任务\n\n- ⏳ **TodoList样式与交互优化** - 现代化样式与交互设计 | 低 | 截止：无截止日期\n\n## 统计概览\n\n- 已完成任务：2 项\n- 待完成任务：1 项\n- 完成率：67%\n",
+        "createdAt": "2025-10-28T03:11:55.743Z",
+        "updatedAt": "2025-10-28T03:11:55.743Z",
+        "user": {
+          "id": "cmh7kzjll0000h880xo3n1dyy",
+          "email": "474960201@qq.com"
+        }
+      }
+    ]
+  }
+}
