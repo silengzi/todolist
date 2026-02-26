@@ -1,27 +1,25 @@
-FROM node:20-alpine
+FROM node:20-bullseye-slim
 
 WORKDIR /app
 
-# 国内 npm 镜像，提高构建稳定性
+# 使用国内 npm 镜像
 RUN npm config set registry https://registry.npmmirror.com
 
-# 1. 先复制依赖文件
+# 复制依赖文件
 COPY package.json package-lock.json ./
 
-# 2. 复制整个项目，包括 prisma/schema.prisma 和 SQLite 文件
+# 复制项目源码
 COPY . .
 
-# 3. 安装依赖
+# 安装依赖
 RUN npm ci --unsafe-perm
 
-# 4. 生成 Prisma Client
+# Prisma 生成
 RUN npx prisma generate
 
-# 5. 构建 Next.js 项目
+# Next.js 构建
 RUN npm run build
 
-# 6. 暴露端口
 EXPOSE 3000
 
-# 7. 启动
 CMD ["node", ".next/standalone/server.js"]
