@@ -6,6 +6,10 @@ services:
     build: .
     container_name: nextjs-app
     restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./prisma/prisma/dev.db:/app/prisma/prisma/dev.db
 
   nginx:
     image: nginx:alpine
