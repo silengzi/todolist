@@ -1,23 +1,15 @@
-version: "3"
-
 services:
-
-  nextjs:
-    build: .
-    container_name: nextjs-app
-    restart: always
+  todolist:
+    image: todolist:latest
+    container_name: todolist
+    restart: unless-stopped
     ports:
       - "3000:3000"
     volumes:
-      - ./prisma/prisma/dev.db:/app/prisma/prisma/dev.db
-
-  nginx:
-    image: nginx:alpine
-    container_name: nginx
-    restart: always
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
-    depends_on:
-      - nextjs
+      # 将宿主机的数据库文件挂载进容器
+      - /opt/todolist/data:/app/data
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=file:/app/data/dev.db
+      # 其他环境变量（JWT secret 等）
+      - JWT_SECRET=your_secret_here
