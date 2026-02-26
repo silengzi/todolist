@@ -52,8 +52,8 @@ const nextConfig: NextConfig = {
   // PrismaPlugin 是 webpack 插件，不兼容 Turbopack
   // 因此 package.json 中的 dev 脚本添加了 --webpack 标志
   
-  // // 使用 standalone 输出模式以确保所有必要的文件被包含
-  // output: "standalone",
+  // 使用 standalone 输出模式以确保所有必要的文件被包含
+  output: "standalone",
   
   // // 确保 Prisma Client 及其二进制文件在 Vercel 上被正确打包
   // // 这些文件包含查询引擎，在 serverless 环境中非常重要
